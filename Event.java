@@ -34,4 +34,16 @@ public class Event {
 	public int getDay(){ 
 		return cal.get(GregorianCalendar.DAY_OF_MONTH);
 	}
+	public void setStartTime(int startTime){
+		this.startTime = startTime;
+	}
+	public void setEndTime(int startTime){
+		this.endTime = endTime;
+	}
+	public void setEventName(String name){
+		eventName = name; 
+	}
+	public void setDate(int year, int month, int day){
+		cal.set(year, month, day);
+	}
 }
